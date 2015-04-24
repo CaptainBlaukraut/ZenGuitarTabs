@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAF0"
+    android:screenOrientation="portrait"
+    tools:context="com.maximilianobpacher.zenguitartabs.GameOverActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Topline"
+            android:background="@drawable/menubar"
+            android:text="Level finished!"
+            android:textColor="#1c0a0c"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:background="@drawable/zenapproves"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/chordImage"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:layout_marginBottom="25dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Ulol."
+                android:id="@+id/results"
+                android:textSize="26sp"
+                android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:id="@+id/prevButton"
+            android:text = "Menu"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/gameoverbutton"
+            android:onClick="goToMenu"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:id="@+id/nextButton"
+            android:layout_marginLeft="2dp"
+            android:text="Play Again"
+            android:background="@drawable/gameoverbutton"
+            android:onClick="replayLevel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

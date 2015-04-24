@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:orientation="vertical"
+    android:background="#FFFAF0"
+    android:screenOrientation="portrait"
+    tools:context=".StartScreenActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"
+        android:clickable="false">
+
+        <ImageView
+            android:layout_width="280dip"
+            android:layout_height="150dip"
+            android:id="@+id/introPicture"
+            android:background="@drawable/guitarzenstartscreen"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Levels"
+                android:layout_weight="1"
+                android:background="@drawable/startpagebutton"
+                android:id="@+id/PlayButton"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="10dip"
+                android:onClick="goToLevelSelect"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zen Mode"
+                android:layout_weight="1"
+                android:background="@drawable/startpagebutton"
+                android:id="@+id/ZenModeButton"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:onClick="playZenmode"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Help"
+                android:background="@drawable/startpagebutton"
+                android:id="@+id/HelpButton"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:onClick="goToHelp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context="com.maximilianobpacher.zenguitartabs.GameActivity"
+    android:background="#FFFAF0">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Topline"
+            android:background="@drawable/menubar"
+            android:text="Level 1: Basic Chords"
+            android:textColor="#1c0a0c"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+    </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawable="@drawable/dchord"
+            android:id="@+id/chordImage"
+            android:layout_weight="40"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="A"
+                android:textColor="#1c0a0c"
+                android:textSize="30sp"
+                android:id="@+id/button1"
+                android:background="@drawable/gamebutton"
+                android:onClick="checkAnswer"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="3dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="B"
+                android:textColor="#1c0a0c"
+                android:textSize="30sp"
+                android:id="@+id/button2"
+                android:background="@drawable/gamebutton"
+                android:onClick="checkAnswer"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="C"
+                android:textColor="#1c0a0c"
+                android:textSize="30sp"
+                android:id="@+id/button3"
+                android:background="@drawable/gamebutton"
+                android:onClick="checkAnswer"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="3dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="D"
+                android:textColor="#1c0a0c"
+                android:textSize="30sp"
+                android:id="@+id/button4"
+                android:background="@drawable/gamebutton"
+                android:onClick="checkAnswer"
+                android:layout_weight="1"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="3dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

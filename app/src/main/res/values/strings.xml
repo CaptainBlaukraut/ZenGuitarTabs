@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZenGuitarTabs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_level_select">LevelSelectActivity</string>
+    <string name="title_activity_chords_overview">ChordsOverviewActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_main_game">MainGameActivity</string>
+    <string name="title_activity_game_over">GameOverActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dip"
+    android:paddingRight="40dip"
+    android:paddingTop="30dip"
+    android:paddingBottom="30dip"
+    android:screenOrientation="portrait"
+    android:background="#FFFAF0"
+    tools:context="com.maximilianobpacher.zenguitartabs.HelpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app is designed to teach guitar chords. \n\nMaster the basic chords, the 7th chords and the minor chords by taking the quizzes on the chords first. \n\nTake the Zen Mode to impress the grand old master with your Highscore! \n\nHave Fun!"
+        android:textSize="22sp"
+        android:id="@+id/dummy"/>
+
+</RelativeLayout>
